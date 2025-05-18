@@ -26,7 +26,7 @@ def initialize_engine():
     if is_initialized:
         return  # Skip reinitialization
 
-    print("🔄 Initializing query engine...")
+    print(" Initializing query engine...")
 
     # Step 1: Load and parse the Gale Encyclopedia PDF
     loader = PyPDFLoader("X://Downloads/gale.pdf")
@@ -67,7 +67,7 @@ def initialize_engine():
     )
 
     is_initialized = True
-    print(f"✅ Engine initialized with {len(chunk_texts)} chunks.")
+    print(f" Engine initialized with {len(chunk_texts)} chunks.")
 
 def retrieve_relevant_docs(query, k=3):
     """Retrieve top-k most relevant medical documents using FAISS."""
